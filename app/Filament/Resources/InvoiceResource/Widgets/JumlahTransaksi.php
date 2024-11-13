@@ -23,11 +23,11 @@ class JumlahTransaksi extends BaseWidget
             Stat::make('Total Transaksi Hari Ini', $this->getTodayTransactionCount())
                 ->descriptionIcon('heroicon-o-banknotes'),
             
-            Stat::make('Total Transaksi Kemarin', $this->getYesterdayTransactionCount())
-                ->descriptionIcon('heroicon-o-banknotes'),
+            // Stat::make('Total Transaksi Kemarin', $this->getYesterdayTransactionCount())
+            //     ->descriptionIcon('heroicon-o-banknotes'),
             
-            Stat::make('Total Transaksi Bulan Ini', $this->getMonthlyTransactionCount())
-                ->descriptionIcon('heroicon-o-banknotes'),
+            // Stat::make('Total Transaksi Bulan Ini', $this->getMonthlyTransactionCount())
+            //     ->descriptionIcon('heroicon-o-banknotes'),
             
             Stat::make('Total Transaksi Keseluruhan', $this->getTotalTransactionCount())
                 ->descriptionIcon('heroicon-o-banknotes'),
