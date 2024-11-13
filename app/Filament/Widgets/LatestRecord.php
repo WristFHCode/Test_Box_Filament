@@ -81,12 +81,10 @@ class LatestRecord extends BaseWidget
                 //     ->searchable()
                 //     ->sortable(),
                 Tables\Columns\TextColumn::make('amount')
-                    ->money('idr')
-                    ->sortable(),
+                    ->money('idr'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Date')
-                    ->dateTime()
-                    ->sortable(),
+                    ->dateTime(),
             ])
             ->defaultSort('created_at', 'desc')
             ->striped();
