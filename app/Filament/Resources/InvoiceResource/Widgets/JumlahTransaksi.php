@@ -63,6 +63,7 @@ class JumlahTransaksi extends BaseWidget
     protected function getTotalTransactionCount(): int
     {
         return Invoice::count();
+        // Test 
     }
 
     protected function getTodayTransactionAmount(): float
